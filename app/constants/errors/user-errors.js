@@ -29,13 +29,19 @@ UserErrors.NOT_FOUND = {
 UserErrors.CONFLICT = {
   errorCode: 1005,
   statusCode: 409,
-  developerMessage: 'User with this email is already exists'
+  developerMessage: 'User with this email already exists'
 };
 
 UserErrors.NOT_IMPLEMENTED = {
   errorCode: 1999,
   statusCode: 501,
   developerMessage: 'Feature is not implemented'
+};
+
+UserErrors.UNEXPECTED_ERROR = {
+    errorCode: 2005,
+    statusCode: 500,
+    developerMessage: 'Unexpected error occurred!'
 };
 
 module.exports = UserErrors;
